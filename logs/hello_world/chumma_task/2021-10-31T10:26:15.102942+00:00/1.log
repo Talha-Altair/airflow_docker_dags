@@ -1,0 +1,23 @@
+[2021-10-31 10:26:46,634] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: hello_world.chumma_task 2021-10-31T10:26:15.102942+00:00 [queued]>
+[2021-10-31 10:26:46,683] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: hello_world.chumma_task 2021-10-31T10:26:15.102942+00:00 [queued]>
+[2021-10-31 10:26:46,683] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-31 10:26:46,683] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2021-10-31 10:26:46,683] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-31 10:26:46,702] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): chumma_task> on 2021-10-31T10:26:15.102942+00:00
+[2021-10-31 10:26:46,708] {standard_task_runner.py:52} INFO - Started process 41 to run task
+[2021-10-31 10:26:46,713] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'hello_world', 'chumma_task', '2021-10-31T10:26:15.102942+00:00', '--job-id', '3', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/hello_world.py', '--cfg-path', '/tmp/tmpkrdrag5g', '--error-file', '/tmp/tmpworrzyyh']
+[2021-10-31 10:26:46,714] {standard_task_runner.py:77} INFO - Job 3: Subtask chumma_task
+[2021-10-31 10:26:46,775] {logging_mixin.py:104} INFO - Running <TaskInstance: hello_world.chumma_task 2021-10-31T10:26:15.102942+00:00 [running]> on host 5ce3a34c0ce0
+[2021-10-31 10:26:46,915] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=hello_world
+AIRFLOW_CTX_TASK_ID=chumma_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-31T10:26:15.102942+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-10-31T10:26:15.102942+00:00
+[2021-10-31 10:26:46,916] {logging_mixin.py:104} INFO - hello bro
+[2021-10-31 10:26:46,916] {python.py:118} INFO - Done. Returned value was: None
+[2021-10-31 10:26:46,935] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=hello_world, task_id=chumma_task, execution_date=20211031T102615, start_date=20211031T102646, end_date=20211031T102646
+[2021-10-31 10:26:46,991] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-10-31 10:26:47,009] {local_task_job.py:146} INFO - Task exited with return code 0
